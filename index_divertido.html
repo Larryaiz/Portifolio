@@ -116,6 +116,12 @@ main::before {
   --btn-text-divertido: #000;
 }
 
+/* cor da letra da navbar no modo escuro */
+[data-theme="dark"] .nav a {
+  color: #111 !important;
+}
+
+
 /* === Botões === */
 .serio-btn { background: var(--btn-bg-serio); color: var(--btn-text-serio); }
 .divertido-btn { background: var(--btn-bg-divertido); color: var(--btn-text-divertido); }
@@ -246,6 +252,85 @@ footer{padding:2rem 1rem; text-align:center; color:var(--muted)}
   vertical-align: middle; /* alinha na linha do texto */
   margin-left: 8px; /* espaço entre o texto e o gatinho */
 }
+/* Botões arco-íris na navbar 🌈 */
+.nav-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 14px;
+  border-radius: 14px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #000; /* texto preto para contraste */
+  background: linear-gradient(
+    90deg,
+    #ff9ecb,
+    #ffdd94,
+    #e1ff9f,
+    #9ffffd,
+    #b5a8ff,
+    #ff9ecb
+  );
+  background-size: 400% 400%;
+  animation: rainbow-move 6s ease infinite;
+  box-shadow: 0 4px 10px rgba(0,0,0,.15);
+  transition: transform .12s ease, filter .12s ease;
+  margin-left: 10px;
+}
+
+/* Hover bonitinho */
+.nav-button:hover {
+  transform: translateY(-3px);
+  filter: brightness(1.1);
+}
+
+/* Animação do gradiente arco-íris */
+@keyframes rainbow-move {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Mobile ajuste */
+@media (max-width: 700px) {
+  .nav-button {
+    padding: 6px 10px;
+    font-size: 0.88rem;
+  }
+}
+/* Botão Entre em Contato arco-íris */
+.btn-contact {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  border-radius: 14px;
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  color: #000;
+  background: linear-gradient(
+    90deg,
+    #ff9ecb,
+    #ffdd94,
+    #e1ff9f,
+    #9ffffd,
+    #b5a8ff,
+    #ff9ecb
+  );
+  background-size: 400% 400%;
+  animation: rainbow-move 6s ease infinite;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.12s ease, filter 0.12s ease;
+}
+
+/* Hover fofinho */
+.btn-contact:hover {
+  transform: translateY(-4px);
+  filter: brightness(1.12);
+}
 
 </style>
 </head>
@@ -257,12 +342,13 @@ footer{padding:2rem 1rem; text-align:center; color:var(--muted)}
   <div class="nav-inner">
     <div class="brand">Graziele Souza <span class="cat">🐈‍⬛</span></div>
     <nav>
-      <a href="#sobre">Sobre</a>
-      <a href="#habilidades">Habilidades</a>
-      <a href="#projetos">Projetos</a>
-      <a href="#contato">Contato</a>
-      <button class="theme-btn" id="themeToggle">Alternar tema</button>
-    </nav>
+  <a class="nav-button" href="#sobre">Sobre</a>
+  <a class="nav-button" href="#habilidades">Habilidades</a>
+  <a class="nav-button" href="#projetos">Projetos</a>
+  <a class="nav-button" href="#contato">Contato</a>
+
+  <button class="theme-btn" id="themeToggle">Alternar tema</button>
+</nav>
   </div>
 </div>
 
@@ -287,7 +373,7 @@ footer{padding:2rem 1rem; text-align:center; color:var(--muted)}
     <p style="max-width:52ch; color:var(--muted); margin: .6rem 0 1.2rem">
        QA • Python • Análise de Dados
     </p>
-    <a class="cta" href="#contato">Entre em contato</a>
+    <a class="btn-contact" href="#contato">Entre em contato</a>
   </div>
 
   <div class="hero-card">
