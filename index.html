@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-<title>Portfólio – Dione Braga Ferreira</title>
+<title>Portfólio – Graziele Souza </title>
 <style>
   :root{
     --bg: #0f172a;
@@ -108,33 +108,36 @@
 <body>
 
   <!-- NAV -->
-  <div class="nav">
-    <div class="nav-inner">
-      <div class="brand">Dione Braga</div>
-      <nav>
-        <a href="#sobre">Sobre</a>
-        <a href="#experiencia">Experiência</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#contato">Contato</a>
-        <button class="theme-btn" id="themeToggle">Alternar tema</button>
-      </nav>
+<div class="nav">
+  <div class="nav-inner">
+    <div class="brand">
+      Graziele Souza
+      <span class="cat">🐈‍⬛</span>
     </div>
+
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+      <button class="theme-btn" id="themeToggle">Alternar tema</button>
+    </nav>
   </div>
+</div>
 
   <!-- HERO -->
   <section class="hero">
     <div>
       <div class="chips">
-        <span class="chip">Tecnologia</span>
-        <span class="chip">Cultura</span>
+        <span class="chip">Analise de dados</span>
+        <span class="chip">Arte e ilustração</span>
         <span class="chip">Qualidade de Software</span>
-        <span class="chip">Análise de Dados</span>
       </div>
       <h1>Olá, eu sou <span id="typing"></span></h1>
       <p style="max-width:52ch; color:var(--muted); margin: .6rem 0 1.2rem">
-        Gestão Pública • Projetos Culturais • QA • Python • Selenium • Postman • Análise de Dados
+         QA • Python • Análise de Dados
       </p>
-      <a class="cta" href="#contato">Fale comigo</a>
+      <a class="cta" href="#contato">Entre em contato</a>
     </div>
     <div class="hero-card">
       <svg width="220" height="220" viewBox="0 0 200 200" aria-hidden="true">
@@ -143,7 +146,7 @@
             <circle cx="100" cy="100" r="95" />
           </clipPath>
         </defs>
-        <image href="https://avatars.githubusercontent.com/u/171820503"
+        <image href="./perfil.jpg"
           width="200" height="200" clip-path="url(#circleView)" preserveAspectRatio="xMidYMid slice"/>
         <circle cx="100" cy="100" r="95" fill="none" stroke="var(--accent)" stroke-width="4"/>
       </svg>
@@ -154,54 +157,47 @@
   <section id="sobre" class="wrap reveal">
     <h2 class="section-title"><span class="bar"></span> Sobre mim</h2>
     <p style="max-width:70ch">
-      Sou de Ilhabela, formada em Gestão de Recursos Humanos e pós-graduada em Gestão Pública (Uninter) e em Gestão Cultural e Economia Criativa (PUC Rio).
-      Desde 2017, atuo conectando tecnologia e cultura: facilitação, editais, portfólios, mapeamentos e políticas públicas.
-      Atualmente, facilito os cursos de Qualidade de Software (QA) e Análise de Dados no Instituto Joga Junto.
+      Sou de Ilhabela e tenho formação em Análise de Dados. Atualmente estou cursando Qualidade de Software e explorando o universo de testes, automação e análise de cenários.
+Gosto de entender como as coisas funcionam, descobrir problemas antes que se tornem grandes e tornar produtos mais confiáveis para quem usa.
     </p>
   </section>
 
-  <!-- EXPERIÊNCIA -->
-  <section id="experiencia" class="wrap reveal">
-    <h2 class="section-title"><span class="bar"></span> Experiência</h2>
-    <div class="timeline">
-      <div class="t-item">
-        <h3>Instituto Joga Junto</h3>
-        <div class="when">2023 – Atual</div>
-        <p>Facilitadora de Qualidade de Software (QA).</p>
+  <!-- HABILIDADES -->
+<section id="habilidades" class="wrap reveal">
+  <h2 class="section-title"><span class="bar"></span> Habilidades</h2>
+  
+  <div class="grid">
+    <div class="card">
+      <h4>Linguagens</h4>
+      <div class="chips" style="margin-top: 1rem;">
+        <span class="chip">Python</span>
+        <span class="chip">SQL</span>
       </div>
-      <div class="t-item">
-        <h3>Instituto Joga Junto</h3>
-        <div class="when">2023 – Atual</div>
-        <p>Facilitadora de Análise de Dados.</p>
+
+      <h4>Qualidade de Software</h4>
+      <div class="chips" style="margin-top: 1rem;">
+        <span class="chip">Testes Exploratórios</span>
+        <span class="chip">Documentação de Bugs</span>
+        <span class="chip">Cenários de Teste</span>
       </div>
-      <div class="t-item">
-        <h3>Cadastro Cultural de Ilhabela</h3>
-        <div class="when">2019 – Atual</div>
-        <p>CEO e apoio aos artistas em editais e projetos.</p>
-      </div>
-      <div class="t-item">
-        <h3>Prefeitura de Ilhabela</h3>
-        <div class="when">2017 – Atual</div>
-        <p>Gestão Pública e Gestão de Projetos Culturais.</p>
+
+      <h4>Análise de Dados</h4>
+      <div class="chips" style="margin-top: 1rem;">
+        <span class="chip">Metabase</span>
+        <span class="chip">Visualização de Dados</span>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- PROJETOS -->
   <section id="projetos" class="wrap reveal">
     <h2 class="section-title"><span class="bar"></span> Projetos em destaque</h2>
     <div class="grid">
       <article class="card tilt">
-        <h4>Cadastro Cultural</h4>
-        <p>Mapeamento cultural de Ilhabela; suporte aos artistas; base para implementação do Sistema Municipal de Indicadores Culturais e da Lei Aldir Blanc.</p>
-      </article>
-      <article class="card tilt">
-        <h4>Ilhabela Tech</h4>
-        <p>Formação em tecnologia com foco em QA, ampliando empregabilidade local.</p>
-      </article>
-      <article class="card tilt">
-        <h4>Guias Históricos</h4>
-        <p>Capacitação de guias locais valorizando memória e turismo cultural.</p>
+        <h4>Gameday 2025</h4>
+        <p>Integrante do squad vencedor do primeiro Gameday de Analise de dados pelo instituto Joga Junto.</p>
       </article>
     </div>
   </section>
@@ -210,25 +206,18 @@
   <section id="contato" class="wrap reveal">
     <h2 class="section-title"><span class="bar"></span> Contato</h2>
     <div class="contacts">
-      <a class="pill" href="mailto:dionebraga.work@gmail.com">
+      <a class="pill" href="mailto:grazielesilvasouza.ilha@gmail.com">
         <i class="fa-solid fa-envelope"></i> E-mail
       </a>
-      <a class="pill" href="tel:+5512982912522">
-        <i class="fa-solid fa-phone"></i> Telefone
       </a>
-      <a class="pill" href="https://www.cadastrocultural.com.br" target="_blank" rel="noopener">
-        <i class="fa-solid fa-globe"></i> Site
-      </a>
-      <a class="pill" href="https://www.linkedin.com/in/dionebraga/" target="_blank" rel="noopener">
+      <a class="pill" href="https://www.linkedin.com/in/graziele-silva-b59146257/" target="_blank" rel="noopener">
         <i class="fa-brands fa-linkedin"></i> LinkedIn
       </a>
-      <a class="pill" href="https://www.instagram.com/dionebraga_/" target="_blank" rel="noopener">
-        <i class="fa-brands fa-instagram"></i> Instagram
       </a>
     </div>
   </section>
 
-  <footer>© 2025 • Dione Braga Ferreira</footer>
+  <footer>© 2025 • Graziele Souza</footer>
 
 <script>
   // Tema (dark/light)
@@ -243,7 +232,7 @@
 
   // Efeito de digitação
   const typingEl = document.getElementById('typing');
-  const nameText = 'Dione Braga Ferreira';
+  const nameText = 'Graziele Souza';
   let idx = 0;
   function type() {
     if (idx <= nameText.length){
