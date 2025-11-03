@@ -4,9 +4,56 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+<!-- Botão para versão divertida -->
+<a href="index_divertido.html" class="versao-btn divertido-btn">Portfólio "E se o mercado de trabalho não existisse?"</a>
 <title>Portfólio – Graziele Souza </title>
+
 <style>
+  
+  .versao-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  margin-left: 10px; /* distância entre os botões */
+  z-index: 1000;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+:root {
+  --btn-bg-serio: #22d3ee;
+  --btn-text-serio: #000;
+  --btn-bg-divertido: #f1a3ce;
+  --btn-text-divertido: #000000;
+}
+
+[data-theme="light"] {
+  --btn-bg-serio: #22d3ee;
+  --btn-text-serio: #000;
+  --btn-bg-divertido: #22d3ee;
+  --btn-text-divertido: #000000;
+}
+
+[data-theme="dark"] {
+  --btn-bg-serio: #0ea5e9;
+  --btn-text-serio: #111;
+  --btn-bg-divertido: #0ea5e9;
+  --btn-text-divertido: #000;
+}
+
+.serio-btn {
+  background: var(--btn-bg-serio);
+  color: var(--btn-text-serio);
+}
+
+.divertido-btn {
+  background: var(--btn-bg-divertido);
+  color: var(--btn-text-divertido);
+}
+
+
   :root{
     --bg: #0f172a;
     --surface: #111827;
